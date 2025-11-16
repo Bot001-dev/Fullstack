@@ -1,0 +1,216 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f0f0f;
+    color: white;
+}
+
+/* HEADER / NAVBAR */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #161616;
+    padding: 20px 40px;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00eaff;
+}
+
+.logo {
+    color: #00eaff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* HERO SECTION */
+.hero {
+    padding: 150px 20px 100px;
+    text-align: center;
+    background: linear-gradient(120deg, #00eaff, #0051ff);
+    color: black;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 40px;
+}
+
+section h1 {
+    font-size: 35px;
+    color: #00eaff;
+    margin-bottom: 20px;
+}
+
+/* SKILLS SECTION */
+#skills ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#skills ul li {
+    background: #222;
+    padding: 12px 18px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    width: fit-content;
+    transition: 0.3s;
+}
+
+#skills ul li:hover {
+    background: #00eaff;
+    color: black;
+}
+
+/* PROJECTS SECTION */
+#projects ul {
+    list-style: none;
+}
+
+#projects ul li {
+    background: #222;
+    padding: 20px;
+    margin: 15px 0;
+    border-left: 4px solid #00eaff;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+#projects ul li:hover {
+    background: #2c2c2c;
+    transform: scale(1.02);
+}
+
+/* CONTACT SECTION */
+form {
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+form label {
+    font-size: 18px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    background: #1c1c1c;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    margin: 10px 0 20px;
+}
+
+button {
+    padding: 12px 25px;
+    background: #00eaff;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: white;
+    color: black;
+}
+
+/* CONTACT LINKS */
+#contact ul {
+    list-style: none;
+    margin-top: 25px;
+}
+
+#contact ul li {
+    margin: 8px 0;
+}
+
+#contact ul li a {
+    color: #00eaff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#contact ul li a:hover {
+    color: white;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+}
