@@ -101,7 +101,13 @@ section h1 {
 }
 
 /* SKILLS SECTION */
+#skills{
+    text-align: center;
+}
 #skills ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
     list-style: none;
     margin-top: 20px;
 }
@@ -137,6 +143,10 @@ section h1 {
 #projects ul li:hover {
     background: #2c2c2c;
     transform: scale(1.02);
+}
+
+#Copyright{
+    text-align: center;
 }
 
 /* CONTACT SECTION */

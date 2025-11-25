@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="info">Hello world</h1>
+    <p class="=demo">Hello Nepal</p>
+    <p class="=demo">Hello Kathamandu</p>
+
+<script>
+//id info is under the p variable and now can me changed
+    const p=document.getElementById('info')
+    p.innerHTML = 'Yash'
+    p.style.color = 'red'
+    p.remove();
+
+
+//selectiing elements by class
+
+    const allpra=document.getElementsByClassName('demo')
+    allpra[0].innerText = "wow";
+    allpra[1].innerText = "wow";
+    
+
+    const a = document.querySelector('#info')
+    const b = document.querySelector('.demo')//always returns first element
+    const c = document.querySelectorAll('.demo')//alawy returns every element with classname
+    const d = document.querySelector('p')//returns first element with tag p
+    const e = document.querySelectorAll('p')//returns all element with tag p
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="button">click me</button>
+    <h1 id="demo">Hover me</h1>
+    <p id="info"></p>
+
+    <button id="btn">click again</button>
+    <p id="bn"></p>
+
+    
+    <form id="contact-form">enter your name</form>
+    <p id="display"></p>
+    <input id="inputbox" type="text">
+    <button type = 'submitte' id="sub-btn">click here</button>
+<script>
+    const p = document.getElementById('button').addEventListener('click',function(){
+       document.getElementById('info').innerText='this button was clicked';
+    })
+    document.getElementById('demo').addEventListener('mouseover',function(){
+        document.getElementById('demo').style.color='red'
+    })
+     document.getElementById('demo').addEventListener('mouseout',function(){
+        document.getElementById('demo').style.color='black'
+    })
+
+
+
+     const s = document.getElementById('btn').addEventListener('click',function(){
+       document.getElementById('bn').innerText='this button was clicked';
+    })
+
+
+
+
+    // const input = document.getElementById('inputbox')
+    // input.addEventListener('input', function() {
+    // document.getElementById('display').innerText = input.value;
+    // })
+
+
+    const form = document.getElementById('contact-form')
+    const message = document.getElementById('display')
+
+    form.addEventListener('submitte',function(e){
+                const input = document.getElementById('inputbox').value.trim()
+
+                if (input){
+                    message.innerText = 'form submitted'
+                    message.style.color = "green"
+                }else{
+                    message.innerText = 'you need to fill the inner box';
+                    message.color = 'red';
+                }
+        e.preventDefault() //this thing wont let the page relode
+        message.innerText = "this form was submitted"
+    })
+
+
+
+</script>
+</body>
+</html>
