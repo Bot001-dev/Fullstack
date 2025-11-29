@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const student = {
+            name: 'alice',
+            age : 24,
+            college : 'herald',
+            isstudent: true
+        }
+        console.log(student.age)//old way
+
+        const {name,age} = student;//student destructuring
+        console.log(age)
+    </script>
+</body>
+</html>

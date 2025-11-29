@@ -236,3 +236,38 @@ button:hover {
         padding: 60px 20px;
     }
 }
+/* MOBILE MENU BEHAVIOR */
+.menu-toggle {
+    display: none;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    /* Show hamburger button on mobile */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Hide menu by default */
+    .nav-links {
+        display: none;
+        position: absolute;
+        right: 20px;
+        top: 70px;
+        background: #111;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    /* When JS adds .open → show menu */
+    .nav-links.open {
+        display: flex;
+    }
+}
