@@ -1,0 +1,10 @@
+{
+  "movies": [
+    {
+      "id": "1",
+      "title": "ok",
+      "year": 2010,
+      "genre": "Sci-Fi"
+    }
+  ]
+}
